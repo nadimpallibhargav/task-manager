@@ -21,15 +21,15 @@ app.post('/tasks', (req, res) => {
         res.send("Server is working");
     });
 
-    app.listen(5001, () => {
-        console.log("Server running on port 5001");
+    app.listen(5000, () => {
+        console.log("Server running on port 5000");
     });
     const task = req.body;
     tasks.push(task);
     res.json({ message: "Task added" });
 });
 
-const PORT = 5001;
+const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
